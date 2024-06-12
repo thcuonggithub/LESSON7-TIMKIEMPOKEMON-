@@ -1,0 +1,91 @@
+.card img {
+    padding: 15px 25px;
+    margin: 15px;
+    background-color: #EEEEEE;
+    max-height: 205px;
+}
+
+.pokemon_id {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    padding-left: 40px;
+}
+
+.pokemon_name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: black;
+    padding-left: 40px;
+}
+
+.pokemon_class_wrapper {
+    display: flex;
+    gap: 5px;
+    padding-left: 40px;
+}
+
+.pokemon_class_wrapper span {
+    padding: 0px 20px;
+    border-radius: 5px;
+}
+
+.Grass {
+    background-color: #99CC66 !important;
+    color: black;
+}
+
+.Poison {
+    background-color: #CD96CD !important;
+    color: white;
+}
+
+.Fire {
+    background-color: #e97247 !important;
+    color: white;
+}
+
+.Flying {
+    background: linear-gradient(180deg, rgba(18, 214, 205, 1) 50%, rgba(142, 154, 156, 1) 50%) !important;
+    color: white;
+}
+
+.Water {
+    background-color: #20B2AA !important;
+}
+
+.Bug {
+    background-color: #008B00 !important;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, .2);
+}
+
+/* Default: 1 column */
+.product {
+    grid-template-columns: 1fr;
+}
+
+/* Tablets: 2 columns */
+@media (min-width: 600px) {
+    .product {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Laptops: 3 columns */
+@media (min-width: 900px) {
+    .product {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Desktops: 4 columns */
+@media (min-width: 1200px) {
+    .product {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
